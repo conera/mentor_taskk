@@ -1,0 +1,141 @@
+/* обнуление*/
+body{
+	font-family: "Poppins", sans-serif;
+	font-size:16px;
+	margin:0;
+	padding:0; 
+}
+div, p, input, button, form, span, a ,ul , li{
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p{
+	margin:0;
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+
+a {
+   
+   display: inline-block;
+}
+ul,
+ol,
+li {
+
+}
+/*///////////////////////////////////////////////////*/
+.text{
+	margin-bottom: 10px;
+}
+p:first-child::first-letter{
+	color: red;
+	font-style: italic;
+}
+section p:nth-child(2)::first-line{
+	color: red;
+	font-style: italic;
+}
+p:nth-child(3)::selection{
+	color: #ffff;
+	background: green;
+}
+.text-4::before{
+	content: "Начало: ";
+	color:red;	
+}
+.text-4::after{
+	content: ":конец!";
+	color:green;
+	
+}
+ul li:nth-child(-n+5){
+	color:red ;
+}
+ul li:nth-child(n+5){
+	color: green;
+}
+ul li:not(.first_numb){
+	color: #000;
+}
+/*///////////////////////////////////////////////////*/
+.footer{
+	padding: 50px 0px 50px;
+	background: #f2f2f2;
+}
+.wrapper{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+   
+}
+.title2 {
+	text-shadow: 1px 1px 20px black;
+}
+h2 {
+	font-weight: 400;
+	color: #2a38a5;
+	text-decoration: none;
+
+}
+
+.first_link{
+	font-size: 14px;
+}
+.first_link:hover{
+	color: green;
+}
+.m-l{
+	margin-left: 20px;
+}
+.box{
+	max-width: 350px;
+}
+.first{
+	display: flex;
+	justify-content: space-between;
+}
+.second{
+	border-left: 2px solid #e8e8e8;
+	border-right: 2px solid #e8e8e8;
+	padding: 0px 50px 0px 20px
+}
+.images{
+	transition: 0.3s;
+}
+.images:hover{
+	box-shadow: 0px 3px 24px 12px rgba(34, 60, 80, 0.2);
+
+}
+.sd{
+	color: #55565a;
+	font-size: 14px;
+	margin:0 auto ;
+	margin-bottom: 20px;
+}
+.label1{
+	text-decoration: none;
+	padding: 15px 20px;
+	background-color: #c6007e;
+	color: #ffff;
+	border: none;
+	border-radius: 3px;
+	font-weight: 600;
+
+
+}
+.btn_link{
+	width: 163px;
+	height: 33px;
+	position: absolute;
+
+}
+.label1:before{
+	content: "ПОДПИСАТЬСЯ";
+
+
+}
+.btn_link:active ~ .label1:before{
+	content: "ПОДПИСАН";
+}
